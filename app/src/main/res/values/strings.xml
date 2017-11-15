@@ -68,7 +68,7 @@
     <!--Downloads-->
     <string name="txt_solucao_downloads">Descrição da solucão: downloads</string>
     <!--Buscar-->
-    <string name="txt_solucao_buscar">Descrição da solucão: buscar</string>
+    <string name="txt_solucao_buscar">Descrição da solucão: buscar "teste git hub"</string>
     <!--Sobre-->
     <string name="txt_solucao_Sobre">Descrição da solucão: Sobre</string>
 

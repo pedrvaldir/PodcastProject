@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.valdir.podcastapp.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background"
+        android:orientation="vertical"
+        tools:context="com.example.android.podcasts.MainActivity">
+
+        <TextView
+            android:id="@+id/allPodCasts"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_podCasts"
+            android:text="@string/grupo_podCasts" />
+
+        <TextView
+            android:id="@+id/audiobooks"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_audioBooks"
+            android:text="@string/grupo_audioBooks" />
+
+        <TextView
+            android:id="@+id/categoria"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_categoria"
+            android:text="@string/grupo_categorias" />
+
+        <TextView
+            android:id="@+id/downloads"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_downloads"
+            android:text="@string/grupo_downloads" />
+
+        <TextView
+            android:id="@+id/buscas"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_buscar"
+            android:text="@string/grupo_buscar" />
+
+        <TextView
+            android:id="@+id/sobre"
+            style="@style/CategoryStyle"
+            android:background="@color/grupo_sobre"
+            android:text="@string/grupo_sobre" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

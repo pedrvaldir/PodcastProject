@@ -1,0 +1,7 @@
+<resources>
+    <!-- Altura de cada item de lista -->
+    <dimen name="list_item_height">68dp</dimen>
+    <!-- Margens de tela padrão, de acordo com as diretrizes de design do Android. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

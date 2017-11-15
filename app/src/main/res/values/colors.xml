@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Cor primária do aplicativo (mostrado na barra do aplicativo) -->
+    <color name="primary_color">#0a0c63</color>
+
+    <!-- Cor escura primária do aplicativo (mostrado na barra de status)-->
+    <color name="primary_dark_color">#2a314a</color>
+
+    <!-- Cor de plano de fundo para o aplicativo -->
+    <color name="tan_background">#e2ddce</color>
+
+    <!-- Cor de fundo para o grupo Podcasts -->
+    <color name="grupo_podCasts">#9ccfa6</color>
+
+    <!-- Cor de fundo para o grupo categoria -->
+    <color name="grupo_categoria">#d0bd7f</color>
+
+    <!-- Cor de fundo para o grupo AudioBooks-->
+    <color name="grupo_audioBooks">#ba9dc0</color>
+
+    <!-- Cor de fundo para o grupo Downloads-->
+    <color name="grupo_downloads">#94b9c0</color>
+
+    <!-- Cor de fundo para o grupo buscas-->
+    <color name="grupo_buscar">#cca69b</color>
+
+    <!-- Cor de fundo para o grupo Sobre-->
+    <color name="grupo_sobre">#d9d36c</color>
+</resources>
+

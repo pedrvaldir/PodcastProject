@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.valdir.podcastapp.DownloadsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--titulo, qual tela o usuário está -->
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/txt_titulo" />
+
+        <!--Definições de Tela -->
+        <TextView
+            style="@style/DescriptionStyle"
+            android:text="@string/txt_definicao_downloads" />
+
+        <!--txt Obstaculo para implementação-->
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/txt_obstaculo_implementacao" />
+
+        <!--Descrição dos obstaculos para a tela downloads -->
+        <TextView
+            style="@style/DescriptionStyle"
+            android:text="@string/txt_obstaculos_downloads" />
+
+        <!--txt Solução potencial-->
+        <TextView
+            style="@style/TitleStyle"
+            android:text="@string/txt_solucao_potencial" />
+
+        <!--Descrição da solução encontrada -->
+        <TextView
+            style="@style/DescriptionStyle"
+            android:text="@string/txt_solucao_downloads" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,10 +1,10 @@
 <resources>
     <!-- Titulo do aplicativo. [CHAR LIMIT=12] -->
-    <string name="app_name">PodCasts e Audiobooks</string>
+    <string name="app_name">PodCasts</string>
 
     <!--Grupos-->
     <!-- PodCasts -->
-    <string name="grupo_podCasts">PodCasts</string>
+    <string name="grupo_podCasts">Home</string>
     <!--Categorias -->
     <string name="grupo_categorias">Categorias</string>
     <!--AudioBooks -->
@@ -14,16 +14,19 @@
     <!--Buscar -->
     <string name="grupo_buscar">Buscar</string>
     <!--Sobre -->
-    <string name="grupo_sobre">Sobre</string>
+    <string name="grupo_playing">Sobre</string>
 
 
-    <!-- TxtView Titulo -->
-    <string name="txt_titulo">Título</string>
+    <!-- TxtView Definição -->
+    <string name="txt_denificao">Definição</string>
 
 
     <!--Definições de cada Tela: -->
-    <!--Podcast-->
-    <string name="txt_definicao_podcast">Definição da tela podcast</string>
+    <!--Home-->
+    <string name="txt_definicao_home">Tela de podcasts recomendados no formado de quadros,
+        alinhados em gridViews, cada quadro corresponde a um podcast. clicando no quadro a tela
+        de Play será chamada.</string>
+
     <!--Categorias-->
     <string name="txt_definicao_categoria">Definição da tela categorias</string>
     <!--AudioBooks-->
@@ -31,17 +34,23 @@
     <!--Downloads-->
     <string name="txt_definicao_downloads">Definição da tela downloads</string>
     <!--Buscar-->
-    <string name="txt_definicao_buscar">Definição da tela buscar</string>
-    <!--Sobre-->
-    <string name="txt_definicao_Sobre">Definição da tela Sobre</string>
+    <string name="txt_definicao_buscar">Pesquisar podcasts através do campo busca e mostrar na tela
+            os resultados da consulta. Ao clicar no quadro(Play) a tela Tocando será aberta</string>
+
+    <!--Playing-->
+    <string name="txt_definicao_playing">Tela de reprodução dos podcasts, onde no topo fica uma
+            imagem que faz referencia ao mesmo, abaixo algumas informações sobre e opções de player
+            de audio como o botão play, avançar  e pausar.</string>
 
 
     <!-- TxtView Obstaculo Técnicos da Implementação -->
     <string name="txt_obstaculo_implementacao">Obstáculos implementação:</string>
 
     <!--Descrição dos obstáculos Técnicos: -->
-    <!--Podcast-->
-    <string name="txt_obstaculos_podcast">Descrição dos obstáculos: podcast</string>
+    <!--Home-->
+    <string name="txt_obstaculos_home">Gerenciar as recomendações com base no histórico do usuário
+            e criar arraysAdapters personalizados para a GridView.</string>
+
     <!--Categorias-->
     <string name="txt_obstaculos_categoria">Descrição dos obstáculos: categorias</string>
     <!--AudioBooks-->
@@ -49,9 +58,12 @@
     <!--Downloads-->
     <string name="txt_obstaculos_downloads">Descrição dos obstáculos: downloads</string>
     <!--Buscar-->
-    <string name="txt_obstaculos_buscar">Descrição dos obstáculos: buscar</string>
-    <!--Sobre-->
-    <string name="txt_obstaculos_Sobre">Descrição dos obstáculos: Sobre</string>
+    <string name="txt_obstaculos_buscar">Criar querys de consulta no banco de dados para retornar
+            nessa tela os resultados.</string>
+
+    <!--PlayingPodcast-->
+    <string name="txt_obstaculos_playing">Gerenciar os podcasts e o acesso a base de dados
+            na rede, além do gerenciamento de áudio em si.</string>
 
 
     <!-- TxtView Solução Potencial: -->
@@ -59,8 +71,11 @@
 
 
     <!--Descrição da solucão na implementacao: -->
-    <!--Podcast-->
-    <string name="txt_solucao_podcast">Descrição da solucão: podcast</string>
+    <!--Home-->
+    <string name="txt_solucao_home">Utilizar uma API de acesso e controle de banco de dados,
+            e com base no histórico recomendar os podcasts similares.</string>
+
+
     <!--Categorias-->
     <string name="txt_solucao_categoria">Descrição da solucão: categorias</string>
     <!--AudioBooks-->
@@ -68,8 +83,21 @@
     <!--Downloads-->
     <string name="txt_solucao_downloads">Descrição da solucão: downloads</string>
     <!--Buscar-->
-    <string name="txt_solucao_buscar">Descrição da solucão: buscar "teste git hub"</string>
-    <!--Sobre-->
-    <string name="txt_solucao_Sobre">Descrição da solucão: Sobre</string>
+    <string name="txt_solucao_buscar">Utilizar o método OnCreateOptionMenu e definir um objeto
+            onQueryTextListener para realizar as buscas e retornar a tela com os resultados.</string>
 
+    <!--PlayingPodcast-->
+    <string name="txt_solucao_playing">Utilizar uma API para gerenciamento do banco de dados e
+            e o gerenciamento de reprodução como o MEDIAPLAYER.</string>
+
+    <!-- Button -->
+    <string name="btn_play">Play</string>
+
+
+
+    <!-- Description images -->
+    <string name="description_image">Imagem de ilustração do podcast</string>
+    <string name="descriprion_albums">Imagem que referencia um icone para acesso aos albums</string>
+    <string name="descriprion_search">Imagem que referencia um icone para acesso a pesquisa</string>
+    <string name="descriprion_payment">Imagem que referencia um icone para acesso a pagamentos</string>
 </resources>

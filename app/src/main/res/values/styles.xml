@@ -11,7 +11,7 @@
             <item name="android:layout_width">match_parent</item>
             <item name="android:layout_height">@dimen/list_item_height</item>
             <item name="android:gravity">center_vertical</item>
-            <item name="android:padding">12dp</item>
+            <item name="android:padding">8dp</item>
             <item name="android:textColor">#2a314a</item>
             <item name="android:textStyle">bold</item>
             <item name="android:textAppearance">?android:textAppearanceMedium</item>
@@ -19,7 +19,7 @@
 
      <!-- Estilo para os Titulos das descrições de cada tela -->
      <style name="TitleStyle">
-         <item name="android:paddingTop">25dp</item>
+         <item name="android:paddingTop">8dp</item>
          <item name="android:layout_height">wrap_content</item>
          <item name="android:layout_width">match_parent</item>
          <item name="android:textStyle">bold</item>
@@ -27,11 +27,11 @@
 
      <!-- Estilo a descrição de cada titulo -->
      <style name="DescriptionStyle">
-         <item name="android:paddingTop">15dp</item>
+         <item name="android:paddingTop">10dp</item>
          <item name="android:layout_height">wrap_content</item>
          <item name="android:layout_width">match_parent</item>
          <item name="android:textSize">14sp</item>
-         <item name="android:padding">16dp</item>
+         <item name="android:padding">10dp</item>
          <item name="android:textColor">@android:color/darker_gray</item>
      </style>
 

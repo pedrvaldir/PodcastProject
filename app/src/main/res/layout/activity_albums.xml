@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.valdir.podcastapp.MainActivity">
+    tools:context="com.example.valdir.podcastapp.AlbumsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,22 +23,11 @@
                 android:layout_height="24dp"
                 android:layout_alignParentTop="true"
                 android:paddingRight="5dp"
-                android:layout_toLeftOf="@+id/image_albums"
-                android:layout_toStartOf="@+id/image_albums"
-                android:contentDescription="@string/descriprion_payment"
-                android:src="@drawable/payment" />
-
-            <ImageView
-                android:id="@+id/image_albums"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_alignParentTop="true"
-                android:paddingRight="5dp"
                 android:layout_toLeftOf="@+id/image_search"
                 android:layout_toStartOf="@+id/image_search"
-                android:contentDescription="@string/descriprion_albums"
+                android:contentDescription="@string/descriprion_payment"
+                android:src="@drawable/payment" />
                 android:src="@drawable/albums" />
-
             <ImageView
                 android:id="@+id/image_search"
                 android:layout_width="24dp"
@@ -54,7 +43,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <!--titulo, qual tela o usuário está -->
             <TextView
                 style="@style/TitleStyle"
@@ -63,19 +51,17 @@
             <!--Definições de Tela -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_definicao_home"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="682dp" />
+                android:text="@string/txt_definicao_categoria" />
 
             <!--txt Obstaculo para implementação-->
             <TextView
                 style="@style/TitleStyle"
                 android:text="@string/txt_obstaculo_implementacao" />
 
-            <!--Descrição dos obstaculos para a tela Podcast -->
+            <!--Descrição dos obstaculos para a tela categoria -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_obstaculos_home" />
+                android:text="@string/txt_obstaculos_categoria" />
 
             <!--txt Solução potencial-->
             <TextView
@@ -85,13 +71,13 @@
             <!--Descrição da solução encontrada -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_solucao_home" />
+                android:text="@string/txt_solucao_categoria" />
+
         </LinearLayout>
 
-        <Button
-            android:id="@+id/button_playing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_play" />
-    </LinearLayout>
+
+        </LinearLayout>
+
+
+
 </android.support.constraint.ConstraintLayout>

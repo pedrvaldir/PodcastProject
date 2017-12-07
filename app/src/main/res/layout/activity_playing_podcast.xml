@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.valdir.podcastapp.MainActivity">
+    tools:context="com.example.valdir.podcastapp.PlayingPodcastActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,8 +32,8 @@
                 android:id="@+id/image_albums"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_alignParentTop="true"
                 android:paddingRight="5dp"
+                android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/image_search"
                 android:layout_toStartOf="@+id/image_search"
                 android:contentDescription="@string/descriprion_albums"
@@ -50,48 +50,54 @@
                 android:src="@drawable/search" />
         </RelativeLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--titulo, qual tela o usuário está -->
-            <TextView
-                style="@style/TitleStyle"
-                android:text="@string/txt_denificao" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:contentDescription="@string/description_image"
+                android:src="@drawable/play" />
 
-            <!--Definições de Tela -->
-            <TextView
-                style="@style/DescriptionStyle"
-                android:text="@string/txt_definicao_home"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="682dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <!--txt Obstaculo para implementação-->
-            <TextView
-                style="@style/TitleStyle"
-                android:text="@string/txt_obstaculo_implementacao" />
+                <!--titulo, qual tela o usuário está -->
+                <TextView
+                    style="@style/TitleStyle"
+                    android:text="@string/txt_denificao" />
 
-            <!--Descrição dos obstaculos para a tela Podcast -->
-            <TextView
-                style="@style/DescriptionStyle"
-                android:text="@string/txt_obstaculos_home" />
+                <!--Definições de Tela -->
+                <TextView
+                    style="@style/DescriptionStyle"
+                    android:text="@string/txt_definicao_playing" />
 
-            <!--txt Solução potencial-->
-            <TextView
-                style="@style/TitleStyle"
-                android:text="@string/txt_solucao_potencial" />
+                <!--txt Obstaculo para implementação-->
+                <TextView
+                    style="@style/TitleStyle"
+                    android:text="@string/txt_obstaculo_implementacao" />
 
-            <!--Descrição da solução encontrada -->
-            <TextView
-                style="@style/DescriptionStyle"
-                android:text="@string/txt_solucao_home" />
+                <!--Descrição dos obstaculos para a tela sobre -->
+                <TextView
+                    style="@style/DescriptionStyle"
+                    android:text="@string/txt_obstaculos_playing" />
+
+                <!--txt Solução potencial-->
+                <TextView
+                    style="@style/TitleStyle"
+                    android:text="@string/txt_solucao_potencial" />
+
+                <!--Descrição da solução encontrada -->
+                <TextView
+                    style="@style/DescriptionStyle"
+                    android:text="@string/txt_solucao_playing" />
+
+            </LinearLayout>
         </LinearLayout>
-
-        <Button
-            android:id="@+id/button_playing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_play" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

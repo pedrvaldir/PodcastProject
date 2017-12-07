@@ -7,15 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
-
+public class BuscaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Defina o conteúdo da atividade para usar o arquivo de layout activity_main.xml
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_busca);
 
         /*Encontre a Exibição que mostra cada categoria
         */
@@ -24,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageAlbums = findViewById(R.id.image_albums);
         ImageView imagePay = findViewById(R.id.image_payment);
 
+
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, PlayingPodcastActivity.class);
+                Intent i = new Intent(BuscaActivity.this, PlayingPodcastActivity.class);
                 startActivity(i);
             }
         });
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         imageSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, BuscaActivity.class);
+                Intent i = new Intent(BuscaActivity.this, BuscaActivity.class);
                 startActivity(i);
             }
         });
@@ -43,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         imageAlbums.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, AlbumsActivity.class);
+                Intent i = new Intent(BuscaActivity.this, AlbumsActivity.class);
                 startActivity(i);
             }
         });
@@ -51,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         imagePay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, PaymentActivity.class);
+                Intent i = new Intent(BuscaActivity.this, PaymentActivity.class);
                 startActivity(i);
             }
         });

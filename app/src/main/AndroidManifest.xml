@@ -16,12 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SobreActivity" android:label="Sobre"/>
-        <activity android:name=".DownloadsActivity" android:label="Downloads"/>
-        <activity android:name=".CategoriaActivity" android:label="Categoria"/>
-        <activity android:name=".BuscarActivity" android:label="Buscar"/>
-        <activity android:name=".AudioBooksActivity" android:label="AudioBooks"/>
-        <activity android:name=".AllpodcastsActivity" android:label="Podcasts"></activity>
+        <activity android:name=".PlayingPodcastActivity" android:label="Tocando"/>
+        <activity android:name=".PaymentActivity" android:label="Pagamentos"/>
+        <activity android:name=".AlbumsActivity" android:label="Albums"/>
+        <activity android:name=".BuscaActivity" android:label="Buscar"/>
     </application>
 
 </manifest>

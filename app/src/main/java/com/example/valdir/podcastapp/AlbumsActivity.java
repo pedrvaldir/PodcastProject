@@ -11,14 +11,17 @@ public class AlbumsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Defina o conteúdo da atividade para usar o arquivo de layout activity_albums.xml
         setContentView(R.layout.activity_albums);
 
-         /*Encontre a Exibição que mostra cada categoria
+        /*
+        * Encontre a Exibição que mostra as telas(busca e pagamento)
         */
         ImageView imagePay = findViewById(R.id.image_payment);
         ImageView imageSearch = findViewById(R.id.image_search);
 
-
+        //Clicando no ícone a tela BuscaActivity será chamada
         imageSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +30,7 @@ public class AlbumsActivity extends AppCompatActivity {
             }
         });
 
+        //Clicando no ícone Pay a tela PaymentActivity será chamada
         imagePay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

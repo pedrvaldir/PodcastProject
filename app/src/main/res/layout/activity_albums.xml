@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!-- ícone para acesso à tela pagamento -->
             <ImageView
                 android:id="@+id/image_payment"
                 android:layout_width="24dp"
@@ -27,7 +28,8 @@
                 android:layout_toStartOf="@+id/image_search"
                 android:contentDescription="@string/descriprion_payment"
                 android:src="@drawable/payment" />
-                android:src="@drawable/albums" />
+
+            <!-- ícone para acesso à tela albúns -->
             <ImageView
                 android:id="@+id/image_search"
                 android:layout_width="24dp"
@@ -43,7 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <!--titulo, qual tela o usuário está -->
+
+            <!-- definição -->
             <TextView
                 style="@style/TitleStyle"
                 android:text="@string/txt_denificao" />
@@ -51,17 +54,17 @@
             <!--Definições de Tela -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_definicao_categoria" />
+                android:text="@string/txt_definicao_albums" />
 
             <!--txt Obstaculo para implementação-->
             <TextView
                 style="@style/TitleStyle"
                 android:text="@string/txt_obstaculo_implementacao" />
 
-            <!--Descrição dos obstaculos para a tela categoria -->
+            <!--Descrição dos obstaculos para a tela albúns -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_obstaculos_categoria" />
+                android:text="@string/txt_obstaculos_Albums" />
 
             <!--txt Solução potencial-->
             <TextView
@@ -71,13 +74,7 @@
             <!--Descrição da solução encontrada -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_solucao_categoria" />
-
+                android:text="@string/txt_solucao_albums" />
         </LinearLayout>
-
-
-        </LinearLayout>
-
-
-
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

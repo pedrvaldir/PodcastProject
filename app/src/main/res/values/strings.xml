@@ -2,45 +2,27 @@
     <!-- Titulo do aplicativo. [CHAR LIMIT=12] -->
     <string name="app_name">PodCasts</string>
 
-    <!--Grupos-->
-    <!-- PodCasts -->
-    <string name="grupo_podCasts">Home</string>
-    <!--Categorias -->
-    <string name="grupo_categorias">Categorias</string>
-    <!--AudioBooks -->
-    <string name="grupo_audioBooks">AudioBooks</string>
-    <!--Downloads -->
-    <string name="grupo_downloads">Downloads</string>
-    <!--Buscar -->
-    <string name="grupo_buscar">Buscar</string>
-    <!--Sobre -->
-    <string name="grupo_playing">Sobre</string>
-
-
     <!-- TxtView Definição -->
     <string name="txt_denificao">Definição</string>
 
-
     <!--Definições de cada Tela: -->
-    <!--Home-->
+    <!-- Home -->
     <string name="txt_definicao_home">Tela de podcasts recomendados no formado de quadros,
-        alinhados em gridViews, cada quadro corresponde a um podcast. clicando no quadro a tela
-        de Play será chamada.</string>
-
-    <!--Categorias-->
-    <string name="txt_definicao_categoria">Definição da tela categorias</string>
-    <!--AudioBooks-->
-    <string name="txt_definicao_audiobooks">Definição da tela audiobooks</string>
-    <!--Downloads-->
-    <string name="txt_definicao_downloads">Definição da tela downloads</string>
+            alinhados em gridViews, cada quadro corresponde a um podcast. clicando no quadro a
+            tela de Play será chamada.</string>
+    <!-- Albuns -->
+    <string name="txt_definicao_albums">Tela de albúns no formato de quadros, alinhados em gridViews,
+            cada quadro irá conter todos os podcasts do autor, clicando no item será aberto todos os
+            podcasts vinculado e criado pelo mesmo.</string>
     <!--Buscar-->
     <string name="txt_definicao_buscar">Pesquisar podcasts através do campo busca e mostrar na tela
-            os resultados da consulta. Ao clicar no quadro(Play) a tela Tocando será aberta</string>
-
+            os resultados da consulta. Ao clicar no quadro(Play) a tela Tocando será aberta.</string>
     <!--Playing-->
     <string name="txt_definicao_playing">Tela de reprodução dos podcasts, onde no topo fica uma
             imagem que faz referencia ao mesmo, abaixo algumas informações sobre e opções de player
             de audio como o botão play, avançar  e pausar.</string>
+    <!--Pagamentos-->
+    <string name="txt_definicao_payment">inserir o que já tem escrito no caderno.</string>
 
 
     <!-- TxtView Obstaculo Técnicos da Implementação -->
@@ -50,50 +32,40 @@
     <!--Home-->
     <string name="txt_obstaculos_home">Gerenciar as recomendações com base no histórico do usuário
             e criar arraysAdapters personalizados para a GridView.</string>
-
-    <!--Categorias-->
-    <string name="txt_obstaculos_categoria">Descrição dos obstáculos: categorias</string>
-    <!--AudioBooks-->
-    <string name="txt_obstaculos_audiobooks">Descrição dos obstáculos: audiobooks</string>
-    <!--Downloads-->
-    <string name="txt_obstaculos_downloads">Descrição dos obstáculos: downloads</string>
+    <!--Albuns-->
+    <string name="txt_obstaculos_Albums">Gerenciar as consultas ao banco de dados e exibir todos os resultados,
+            irá ser portar como a tela iniciar, mas ao invés de cada item corresponder a um podcast, irá corresponder
+            a uma lista de itens.</string>
     <!--Buscar-->
     <string name="txt_obstaculos_buscar">Criar querys de consulta no banco de dados para retornar
             nessa tela os resultados.</string>
-
-    <!--PlayingPodcast-->
+    <!--Playing-->
     <string name="txt_obstaculos_playing">Gerenciar os podcasts e o acesso a base de dados
             na rede, além do gerenciamento de áudio em si.</string>
-
+    <!--payment -->
+    <string name="txt_obstaculos_payment">Já contem no caderno, apenas cópiar.</string>
 
     <!-- TxtView Solução Potencial: -->
     <string name="txt_solucao_potencial">Solucão Potencial</string>
-
 
     <!--Descrição da solucão na implementacao: -->
     <!--Home-->
     <string name="txt_solucao_home">Utilizar uma API de acesso e controle de banco de dados,
             e com base no histórico recomendar os podcasts similares.</string>
-
-
-    <!--Categorias-->
-    <string name="txt_solucao_categoria">Descrição da solucão: categorias</string>
-    <!--AudioBooks-->
-    <string name="txt_solucao_audiobooks">Descrição da solucão: audiobooks</string>
-    <!--Downloads-->
-    <string name="txt_solucao_downloads">Descrição da solucão: downloads</string>
+    <!--Albums-->
+    <string name="txt_solucao_albums">Utilizar uma API de acesso e controle de banco de dados,
+            e criar um arrayAdapter para exibir a lista de objetos de cada album.</string>
     <!--Buscar-->
     <string name="txt_solucao_buscar">Utilizar o método OnCreateOptionMenu e definir um objeto
             onQueryTextListener para realizar as buscas e retornar a tela com os resultados.</string>
-
-    <!--PlayingPodcast-->
+    <!--Playing-->
     <string name="txt_solucao_playing">Utilizar uma API para gerenciamento do banco de dados e
             e o gerenciamento de reprodução como o MEDIAPLAYER.</string>
+    <!--Pagamento-->
+    <string name="txt_solucao_payment">Já está escrito, apenas cópiar. </string>
 
     <!-- Button -->
     <string name="btn_play">Play</string>
-
-
 
     <!-- Description images -->
     <string name="description_image">Imagem de ilustração do podcast</string>

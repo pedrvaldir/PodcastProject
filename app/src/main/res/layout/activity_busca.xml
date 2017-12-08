@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!-- ícone para acesso à tela pagamento -->
             <ImageView
                 android:id="@+id/image_payment"
                 android:layout_width="24dp"
@@ -28,6 +29,7 @@
                 android:contentDescription="@string/descriprion_payment"
                 android:src="@drawable/payment" />
 
+            <!-- ícone para acesso à tela albúns -->
             <ImageView
                 android:id="@+id/image_albums"
                 android:layout_width="24dp"
@@ -39,6 +41,7 @@
                 android:contentDescription="@string/descriprion_albums"
                 android:src="@drawable/albums" />
 
+            <!-- ícone para acesso à tela busca -->
             <ImageView
                 android:id="@+id/image_search"
                 android:layout_width="24dp"
@@ -50,11 +53,11 @@
                 android:src="@drawable/search" />
         </RelativeLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <!--titulo, qual tela o usuário está -->
             <TextView
                 style="@style/TitleStyle"
@@ -84,17 +87,13 @@
             <TextView
                 style="@style/DescriptionStyle"
                 android:text="@string/txt_solucao_buscar" />
-
         </LinearLayout>
 
+        <!-- Botão para acessar a tela tocando  -->
         <Button
             android:id="@+id/button_playing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_play" />
-
-        </LinearLayout>
-
-
-
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

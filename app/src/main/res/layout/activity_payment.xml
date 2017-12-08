@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!-- ícone para acesso à tela albúns -->
             <ImageView
                 android:id="@+id/image_albums"
                 android:layout_width="24dp"
@@ -28,6 +29,7 @@
                 android:contentDescription="@string/descriprion_albums"
                 android:src="@drawable/albums" />
 
+            <!-- ícone para acesso à tela busca -->
             <ImageView
                 android:id="@+id/image_search"
                 android:layout_width="24dp"
@@ -44,25 +46,25 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--titulo, qual tela o usuário está -->
+            <!-- Titulo -->
             <TextView
                 style="@style/TitleStyle"
                 android:text="@string/txt_denificao" />
 
-            <!--Definições de Tela -->
+            <!-- Definições de Tela -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_definicao_downloads" />
+                android:text="@string/txt_definicao_payment" />
 
             <!--txt Obstaculo para implementação-->
             <TextView
                 style="@style/TitleStyle"
                 android:text="@string/txt_obstaculo_implementacao" />
 
-            <!--Descrição dos obstaculos para a tela downloads -->
+            <!--Descrição dos obstaculos para a tela  pagamentos-->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_obstaculos_downloads" />
+                android:text="@string/txt_obstaculos_payment" />
 
             <!--txt Solução potencial-->
             <TextView
@@ -72,9 +74,7 @@
             <!--Descrição da solução encontrada -->
             <TextView
                 style="@style/DescriptionStyle"
-                android:text="@string/txt_solucao_downloads" />
+                android:text="@string/txt_solucao_payment" />
         </LinearLayout>
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

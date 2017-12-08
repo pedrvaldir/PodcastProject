@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <!-- ícone para acesso à tela pagamento -->
             <ImageView
                 android:id="@+id/image_payment"
                 android:layout_width="24dp"
@@ -28,6 +29,7 @@
                 android:contentDescription="@string/descriprion_payment"
                 android:src="@drawable/payment" />
 
+            <!-- ícone para acesso à tela albúns -->
             <ImageView
                 android:id="@+id/image_albums"
                 android:layout_width="24dp"
@@ -39,6 +41,7 @@
                 android:contentDescription="@string/descriprion_albums"
                 android:src="@drawable/albums" />
 
+            <!-- ícone para acesso à tela busca -->
             <ImageView
                 android:id="@+id/image_search"
                 android:layout_width="24dp"
@@ -50,12 +53,12 @@
                 android:src="@drawable/search" />
         </RelativeLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Imagem que corresponda a capa do podcast que está sendo executado -->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -96,7 +99,6 @@
                 <TextView
                     style="@style/DescriptionStyle"
                     android:text="@string/txt_solucao_playing" />
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

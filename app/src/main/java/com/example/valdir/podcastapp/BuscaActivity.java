@@ -1,5 +1,6 @@
 package com.example.valdir.podcastapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,45 +20,21 @@ public class BuscaActivity extends AppCompatActivity {
         /*
         * Encontre a Exibição que mostra as telas(tocando, busca, albuns e pagamento)
         */
-        Button buttonPlay =  findViewById(R.id.button_playing);
-        ImageView imageSearch = findViewById(R.id.image_search);
-        ImageView imageAlbums = findViewById(R.id.image_albums);
-        ImageView imagePay = findViewById(R.id.image_payment);
 
-        //Clicando no botão play a tela PlayingPodcast será chamada
-        buttonPlay.setOnClickListener(new View.OnClickListener() {
+        buttonClickListener(R.id.button_playing, PlayingPodcastActivity.class);
+        buttonClickListener(R.id.image_search, BuscaActivity.class);
+        buttonClickListener(R.id.image_albums, AlbumsActivity.class);
+        buttonClickListener(R.id.image_payment, PaymentActivity.class);
+    }
+
+    private void buttonClickListener(int id, final Class<? extends Activity> clazz){
+        findViewById(id).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(BuscaActivity.this, PlayingPodcastActivity.class);
+                Intent i = new Intent(BuscaActivity.this, clazz);
                 startActivity(i);
             }
         });
 
-        //Clicando no ícone a tela BuscaActivity será chamada
-        imageSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(BuscaActivity.this, BuscaActivity.class);
-                startActivity(i);
-            }
-        });
-
-        //Clicando no ícone Albums a tela AlbumsActivity será chamada
-        imageAlbums.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(BuscaActivity.this, AlbumsActivity.class);
-                startActivity(i);
-            }
-        });
-
-        //Clicando no ícone Pay a tela PaymentActivity será chamada
-        imagePay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(BuscaActivity.this, PaymentActivity.class);
-                startActivity(i);
-            }
-        });
     }
 }

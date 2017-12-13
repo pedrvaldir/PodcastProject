@@ -22,7 +22,7 @@
             imagem que faz referencia ao mesmo, abaixo algumas informações sobre e opções de player
             de audio como o botão play, avançar  e pausar.</string>
     <!--Pagamentos-->
-    <string name="txt_definicao_payment">inserir o que já tem escrito no caderno.</string>
+    <string name="txt_definicao_payment">Tela para compra de créditos.</string>
 
 
     <!-- TxtView Obstaculo Técnicos da Implementação -->
@@ -33,9 +33,9 @@
     <string name="txt_obstaculos_home">Gerenciar as recomendações com base no histórico do usuário
             e criar arraysAdapters personalizados para a GridView.</string>
     <!--Albuns-->
-    <string name="txt_obstaculos_Albums">Gerenciar as consultas ao banco de dados e exibir todos os resultados,
-            irá ser portar como a tela iniciar, mas ao invés de cada item corresponder a um podcast, irá corresponder
-            a uma lista de itens.</string>
+    <string name="txt_obstaculos_Albums">Gerenciar as consultas ao banco de dados e exibir todos os
+            resultados, irá ser portar como a tela iniciar, mas ao invés de cada item corresponder a
+            um podcast, irá corresponder a uma lista de itens.</string>
     <!--Buscar-->
     <string name="txt_obstaculos_buscar">Criar querys de consulta no banco de dados para retornar
             nessa tela os resultados.</string>
@@ -43,7 +43,8 @@
     <string name="txt_obstaculos_playing">Gerenciar os podcasts e o acesso a base de dados
             na rede, além do gerenciamento de áudio em si.</string>
     <!--payment -->
-    <string name="txt_obstaculos_payment">Já contem no caderno, apenas cópiar.</string>
+    <string name="txt_obstaculos_payment">Gerenciar transações bancárias, gerar boletos e pagamentos
+            com cartões de créditos.</string>
 
     <!-- TxtView Solução Potencial: -->
     <string name="txt_solucao_potencial">Solucão Potencial</string>
@@ -62,7 +63,8 @@
     <string name="txt_solucao_playing">Utilizar uma API para gerenciamento do banco de dados e
             e o gerenciamento de reprodução como o MEDIAPLAYER.</string>
     <!--Pagamento-->
-    <string name="txt_solucao_payment">Já está escrito, apenas cópiar. </string>
+    <string name="txt_solucao_payment">Implementar API MOIP, utilizar a base na arquitetura RestFul
+        que usa JSON como MediaType padrão.. </string>
 
     <!-- Button -->
     <string name="btn_play">Play</string>

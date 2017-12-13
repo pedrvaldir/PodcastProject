@@ -1,5 +1,6 @@
 package com.example.valdir.podcastapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,6 +19,14 @@ public class PlayingPodcastActivity extends AppCompatActivity {
         /*
         * Encontre a Exibição que mostra as telas(pagamento, busca e albúns)
         */
+
+
+        buttonClickListener(R.id.image_search, BuscaActivity.class);
+        buttonClickListener(R.id.image_payment, PaymentActivity.class);
+        buttonClickListener(R.id.image_albums, AlbumsActivity.class);
+
+
+        /*
         ImageView imageSearch = findViewById(R.id.image_search);
         ImageView imageAlbums = findViewById(R.id.image_albums);
         ImageView imagePay = findViewById(R.id.image_payment);
@@ -45,6 +54,17 @@ public class PlayingPodcastActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(PlayingPodcastActivity.this, PaymentActivity.class);
+                startActivity(i);
+            }
+        });
+        */
+    }
+
+    private void buttonClickListener(int id, final Class<? extends Activity> clazz){
+        findViewById(id).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(PlayingPodcastActivity.this, clazz);
                 startActivity(i);
             }
         });
